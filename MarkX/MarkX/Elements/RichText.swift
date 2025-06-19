@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RichText: View {
-    enum Element: Identifiable {
+    enum Element: Equatable, Hashable {
         enum Format {
             case bold
             case italic
